@@ -3,7 +3,7 @@
 > **Frontend Developer Internship Submission**  
 > **Chosen Reference Website**: [NVRMND Studio](https://www.nvrmndstudio.com/)  
 > **Live Demo**: [https://your-deployment-url.vercel.app](https://your-deployment-url.vercel.app) *(Update with your deployed Vercel link)*  
-> **Repository**: [https://github.com/your-username/your-repo](https://github.com/your-username/your-repo)
+> **Repository**: [https://github.com/potluriprashanth33/VoidForm-studio_NVRMND-clone](https://github.com/potluriprashanth33/VoidForm-studio_NVRMND-clone)
 
 ---
 
