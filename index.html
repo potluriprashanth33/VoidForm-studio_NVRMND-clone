@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>VØID FORM | High-Conversion Digital Flagships for Visionary Founders</title>
+    <meta name="description" content="We engineer architectural digital flagships for visionary founders who command attention but demand more bookings. Custom websites built in 3-6 weeks."/>
+    
+    <!-- Open Graph / Meta -->
+    <meta property="og:title" content="VØID FORM | High-Conversion Digital Flagships for Visionary Founders"/>
+    <meta property="og:description" content="Turn your traffic into booked high-ticket dream clients. Bespoke digital flagships engineered in 3-6 weeks."/>
+    <meta property="og:image" content="https://cdn.prod.website-files.com/6918922cb5d769cc072f9e9e/698221641bdea7499ca2ebc4_White%20on%20Blue%20-%20Extended.avif"/>
+    <meta property="og:type" content="website"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+
+    <link rel="icon" type="image/png" href="https://cdn.prod.website-files.com/6918922cb5d769cc072f9e9e/698c6cb4f5c01ca7fb939a68_32%20new.png"/>
+    <link rel="apple-touch-icon" href="https://cdn.prod.website-files.com/6918922cb5d769cc072f9e9e/698c6aaa97afd6b738f7d869_nvrmnd%20256x256.png"/>
+
+    <link rel="stylesheet" href="/src/style.css"/>
+</head>
+<body class="body is--cursor">
+
+    <!-- #################### 1. PAGE LOAD GRID OVERLAY #################### -->
+    <div class="transition" id="page-transition">
+        <div class="page-load-logo">
+            <svg viewBox="0 0 400 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: auto;">
+                <rect x="2" y="2" width="396" height="96" fill="#111114" stroke="#BEFD66" stroke-width="3"/>
+                <rect x="0" y="0" width="8" height="8" fill="#BEFD66"/>
+                <rect x="392" y="0" width="8" height="8" fill="#BEFD66"/>
+                <rect x="0" y="92" width="8" height="8" fill="#BEFD66"/>
+                <rect x="392" y="92" width="8" height="8" fill="#BEFD66"/>
+                <text x="50%" y="60%" dominant-baseline="middle" text-anchor="middle" fill="#FFFFFF" font-family="'Offbittrial 101', 'Pixelify Sans', monospace" font-size="34" font-weight="700" letter-spacing="4">
+                    VØID FORM
+                </text>
+            </svg>
+        </div>
+        <!-- 144 Transition Blocks for the Staggered Grid Dissolve -->
+        <!-- Will be dynamically populated or rendered via JS/HTML -->
+        <div class="transition-grid-cells" id="transition-cells"></div>
+    </div>
+
+    <!-- #################### 2. FLOATING CURSOR BADGE #################### -->
+    <div class="cursor" id="cursor-badge">
+        <p class="paragraph" id="cursor-text">Learn more</p>
+    </div>
+
+    <!-- #################### 3. FIXED NAVBAR #################### -->
+    <div class="navbar rl-padding-global" id="main-nav">
+        <header class="rl-container-large navbar-container">
+            <div class="nav-logo-box">
+                <a href="#hero-section" class="brand-link" data-cursor="VØID FORM">
+                    <div class="brand-badge">
+                        <span class="brand-glyph">VF</span>
+                        <span style="font-family: var(--font-pixel-101); letter-spacing: 1px;">VØID FORM</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="menu-btn-box">
+                <div class="flex-block-20">
+                    <div class="nav-available-dot"></div>
+                    <div class="slots-open">slots open - nov '26</div>
+                </div>
+
+                <!-- Acoustic feedback toggle (Unique differentiated feature) -->
+                <button type="button" class="sound-toggle-btn" id="sound-toggle" title="Toggle mechanical sound feedback">
+                    <span id="sound-icon">🔊</span>
+                    <span id="sound-status">SFX: ON</span>
+                </button>
+
+                <a href="#menu" class="menu-btn" id="menu-btn" data-hover-anim="" data-cursor="Open Menu">
+                    <div class="menu-icon">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                            <polygon points="23 11 23 13 13 13 13 23 11 23 11 13 1 13 1 11 11 11 11 1 13 1 13 11 23 11"/>
+                        </svg>
+                    </div>
+                    <div class="menu-btn-text" data-hover-text="">MENU</div>
+                </a>
+            </div>
+        </header>
+
+        <!-- FULL SCREEN MENU OVERLAY -->
+        <nav class="full-screen-menu" id="full-menu">
+            <div class="bg-grid-lines menu">
+                <div class="hero-line-block first-block menu"></div>
+                <div class="hero-line-block second-block menu"></div>
+                <div class="hero-line-block third-block menu"></div>
+                <div class="hero-line-block fourth-block menu"></div>
+            </div>
+
+            <div class="rl-container-large menu-container">
+                <div class="menu-upper">
+                    <!-- Left Navigation -->
+                    <div class="nav-left" id="menu-nav-links">
+                        <a href="#hero-section" class="nav-link is--active" data-nav-target="hero-section">
+                            <div class="menu-number">01</div>
+                            <div class="menu-heading menu">HOME</div>
+                            <div class="nav-corners" id="nav-active-corners">
+                                <div class="nav-corner is--tl"></div>
+                                <div class="nav-corner is--tr"></div>
+                                <div class="nav-corner is--bl"></div>
+                                <div class="nav-corner is--br"></div>
+                            </div>
+                        </a>
+                        <a href="#about-section" class="nav-link" data-nav-target="about-section">
+                            <div class="menu-number">02</div>
+                            <div class="menu-heading menu">ABOUT</div>
+                        </a>
+                        <a href="#work-section" class="nav-link" data-nav-target="work-section">
+                            <div class="menu-number">03</div>
+                            <div class="menu-heading menu">WORK</div>
+                        </a>
+                        <a href="#services-section" class="nav-link" data-nav-target="services-section">
+                            <div class="menu-number">04</div>
+                            <div class="menu-heading menu">SERVICES</div>
+                        </a>
+                        <a href="#contact" class="nav-link trigger-consultation">
+                            <div class="menu-number">05</div>
+                            <div class="menu-heading menu">CONTACT</div>
+                        </a>
+                    </div>
+
+                    <!-- Right Navigation details -->
+                    <div class="nav-right">
+                        <div class="menu-socials">
+                            <h3>Socials</h3>
+                            <div class="menu-socials-list">
+                                <div class="menu-social-link">
+                                    <div class="menu-social-icon">
+                                        <svg fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="m17,9v-1h-1v-1h-1v-1h-6v1h-1v1h-1v1h-1v6h1v1h1v1h1v1h6v-1h1v-1h1v-1h1v-6h-1Zm-1,5h-1v1h-1v1h-4v-1h-1v-1h-1v-4h1v-1h1v-1h4v1h1v1h1v4Z"/>
+                                            <path d="m22,5v-2h-1v-1h-2v-1H5v1h-2v1h-1v2h-1v14h1v2h1v1h2v1h14v-1h2v-1h1v-2h1V5h-1Zm-1,14h-1v1h-1v1H5v-1h-1v-1h-1V5h1v-1h1v-1h14v1h1v1h1v14Z"/>
+                                            <rect x="17" y="5" width="2" height="2"/>
+                                        </svg>
+                                    </div>
+                                    <a data-hover-anim="" href="https://www.instagram.com" target="_blank" class="text-link-box">
+                                        <span data-hover-text="" class="link-btn-text">INSTAGRAM</span>
+                                    </a>
+                                </div>
+                                <div class="menu-social-link">
+                                    <div class="menu-social-icon">
+                                        <svg fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="m22,2v-1H2v1h-1v20h1v1h20v-1h1V2h-1Zm-9,10v8h-3v-11h3v1h1v-1h4v1h1v10h-3v-8h-3Zm-9-4v-3h3v3h-3Zm3,1v11h-3v-11h3Z"/>
+                                        </svg>
+                                    </div>
+                                    <a data-hover-anim="" href="https://www.linkedin.com" target="_blank" class="text-link-box">
+                                        <span data-hover-text="" class="link-btn-text">LINKEDIN</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu-email">
+                            <h3>Direct Inquiries</h3>
+                            <a data-hover-anim="" href="mailto:studio@voidform.design" class="text-link-box">
+                                <span data-hover-text="" class="link-btn-text">[ studio@voidform.design ]</span>
+                            </a>
+                        </div>
+
+                        <div class="menu-newsletter-box">
+                            <h4 class="newsletter-box">JOIN THE ARCHIVE</h4>
+                            <form class="newsletter-form inline-subscribe-form">
+                                <input class="newsletter-input" type="text" placeholder="Your Name" required/>
+                                <input class="newsletter-input" type="email" placeholder="name@domain.com" required/>
+                                <button type="submit" class="newsletter-btn">SUBSCRIBE</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-lower">
+                    <div class="menu-extras">
+                        <a data-hover-anim="" href="#clarity-section"><span data-hover-text="">CLARITY PROTOCOL</span></a>
+                        <div class="menu-extra-link">|</div>
+                        <a data-hover-anim="" href="#work-section"><span data-hover-text="">CASE STUDIES</span></a>
+                        <div class="menu-extra-link">|</div>
+                        <a data-hover-anim="" href="#services-section"><span data-hover-text="">SYSTEMS & PRICING</span></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- #################### 4. MAIN CONTAINER #################### -->
+    <div class="container" id="main-content">
+        
+        <!-- Background 4-Column Architectural Grid -->
+        <div class="bg-grid-lines">
+            <div class="hero-line-block first-block"></div>
+            <div class="hero-line-block second-block"></div>
+            <div class="hero-line-block third-block"></div>
+            <div class="hero-line-block fourth-block"></div>
+        </div>
+
+        <!-- ==================== HERO SECTION ==================== -->
+        <section class="rl-padding-global hero-section" id="hero-section">
+            <div class="rl-container-large hero-container">
+                <div class="hero-upper-heading">
+                    <h1 class="hero-heading">TURN YOUR</h1>
+                    <p class="hero-body">
+                        We engineer custom digital flagships for visionary founders who command attention but demand higher conversion — turning cold traffic into booked high-ticket retainers.
+                    </p>
+                </div>
+
+                <div class="hero-lower-heading">
+                    <h1 class="hero-heading">TRAFFIC INTO</h1>
+                    <div data-cursor="Hell Yeah!" class="hero-border-heading">
+                        <h1 class="hero-heading">BOOKED</h1>
+                        <div class="hero-border-outline-box">
+                            <div class="rules-border-tl"></div>
+                            <div class="rules-border-tr"></div>
+                            <div class="rules-border-bl"></div>
+                            <div class="rules-border-br"></div>
+                            <div class="hero-border-outline"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <h1 class="hero-subheading">dream clients.</h1>
+
+                <div class="div-block-52">
+                    <div class="div-block-53">
+                        <a data-hover-anim="" href="https://www.instagram.com" target="_blank">
+                            <span data-hover-text="">INSTAGRAM,</span>
+                        </a>
+                        <a data-hover-anim="" href="https://www.linkedin.com" target="_blank">
+                            <span data-hover-text="">LINKEDIN,</span>
+                        </a>
+                    </div>
+
+                    <div class="div-block-66">
+                        <a data-hover-anim="" href="#about-section" data-cursor="Scroll">
+                            <div class="icon-embed-xsmall">
+                                <svg viewBox="0 0 256 256" width="100%" height="100%" fill="currentColor">
+                                    <path d="m204.24 148.24l-72 72a6 6 0 0 1-8.48 0l-72-72a6 6 0 0 1 8.48-8.48L122 201.51V40a6 6 0 0 1 12 0v161.51l61.76-61.75a6 6 0 0 1 8.48 8.48"/>
+                                </svg>
+                            </div>
+                            <span data-hover-text="">scroll down</span>
+                        </a>
+                    </div>
+
+                    <div class="div-block-55">
+                        <a data-hover-anim="" href="mailto:studio@voidform.design">
+                            <span data-hover-text="">studio@voidform.design</span>
+                        </a>
+                    </div>
+                </div>
+
+                <p class="hero-body mobile">
+                    We engineer custom digital flagships for visionary founders who command attention but demand higher conversion — turning cold traffic into booked high-ticket retainers.
+                </p>
+
+                <div class="div-block-30">
+                    <a href="#contact" class="hero-btn middle trigger-consultation" data-hover-anim="" data-cursor="Let's Talk">
+                        <div class="text-block">
+                            <div data-hover-text="" class="btn-text">LET 'S BUILD YOURS</div>
+                        </div>
+                        <div class="icon-block">
+                            <div class="arrow-up-right-icon">
+                                <svg viewBox="0 0 256 256" width="100%" height="100%" fill="currentColor">
+                                    <path d="M200 64v104a8 8 0 0 1-16 0V83.31L69.66 197.66a8 8 0 0 1-11.32-11.32L172.69 72H88a8 8 0 0 1 0-16h104a8 8 0 0 1 8 8"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== ABOUT SECTION ==================== -->
+        <section id="about-section" class="rl-padding-global rl-padding-section-large about-section">
+            <div class="rl-container-large about-container">
+                <div class="about-sidebar">
+                    <div class="section-tag">ABOUT US</div>
+                </div>
+
+                <div class="about-content box">
+                    <div class="about-upper">
+                        <h2 class="about-heading" id="about-heading">
+                            <em>Most </em>
+                            websites just sit there like static digital brochures, but yours is about to be the talk of the industry. Right now? Your website might be the silent bottleneck holding back revenue. It doesn't position you as the definitive premium authority. And high-caliber dream clients who land on it... simply slip away without booking.
+                        </h2>
+                    </div>
+
+                    <div class="about-divider-wrapper">
+                        <div class="divider horizontal about"></div>
+                        <div class="div-block-86">
+                            <a data-hover-anim="" href="#services-section" class="more-about-btn" data-cursor="Our Blueprint">
+                                <span data-hover-text="" class="link-btn-text primary-2 big">OUR BLUEPRINT</span>
+                                <div class="icon-embed-xsmall" style="animation: none; transform: rotate(-45deg);">
+                                    <svg viewBox="0 0 32 32" width="18" height="18" fill="currentColor">
+                                        <path d="M10 6v2h12.59L6 24.59L7.41 26L24 9.41V22h2V6z"/>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="about-lower">
+                        <div class="about-content-body">
+                            <img src="https://cdn.prod.website-files.com/6918922cb5d769cc072f9e9e/691df85560dcfc6a761612b1_Finger%20Point%20Right.svg" alt="Finger pointing" class="small-icon mobile-hidden"/>
+                            <p class="about-body">
+                                At <span class="text-span-4">VØID FORM</span>, we build the digital flagship that captures the true gravity of what you've engineered and articulates your complete vision. We start by mapping your business economics, architecting conversion flows, then deploying systems that run on autopilot.<br/><br/>
+                                <strong>Then we make it look fire!!</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== OUR WORK / PROJECTS SCROLL ==================== -->
+        <section class="rl-padding-global projects-scroll rl-padding-section-large" id="work-section">
+            <div class="rl-container-large projects-scroll-section">
+                <!-- Left Sticky Column -->
+                <div class="projects-scroll-content">
+                    <div class="section-tag">Our Work</div>
+
+                    <div class="projects-scroll-content-wrap">
+                        <!-- Project 1: Intellete -->
+                        <div class="projects-scroll-content-item is-active" data-project-index="0">
+                            <div class="project-scroll-content-img-box">
+                                <img src="https://cdn.prod.website-files.com/6927231c0d7524b4d9b32284/6940440e37f96153f51672e0_HeroSection.avif" alt="Intellete" class="project-scroll-content-img"/>
+                            </div>
+                            <h3 class="line-animate">Intellete</h3>
+                            <div class="projects-scroll-content-lower">
+                                <p>Intellete accelerates international students navigating elite higher education in Europe — from AI-powered program discovery to settling into a new country.</p>
+                                <div class="projects-scroll-brand">
+                                    <img src="https://cdn.prod.website-files.com/6927231c0d7524b4d9b32284/6940440e37f96153f51672e0_HeroSection.avif" alt="Intellete Logo" class="projects-scroll-brand-img"/>
+                                    <div class="project-scroll-brand-content">
+                                        <h6>Intellete Platform</h6>
+                                        <div class="dim">August 25, 2025 // Global EdTech</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 2: Words Hurt -->
+                        <div class="projects-scroll-content-item" data-project-index="1">
+                            <div class="project-scroll-content-img-box">
+                                <img src="https://cdn.prod.website-files.com/6927231c0d7524b4d9b32284/694b72bf1bf9d5bdf5fee301_mockup%20laptop.avif" alt="Words Hurt" class="project-scroll-content-img"/>
+                            </div>
+                            <h3 class="line-animate">WORDS-HURT</h3>
+                            <div class="projects-scroll-content-lower">
+                                <p>An ex-theatre director turned high-stakes copywriter building a rebellious platform for underdog founders. We liberated their brand fire into a high-converting digital sanctuary.</p>
+                                <div class="projects-scroll-brand">
+                                    <img src="https://cdn.prod.website-files.com/6927231c0d7524b4d9b32284/694b72bf1bf9d5bdf5fee301_mockup%20laptop.avif" alt="Words Hurt Logo" class="projects-scroll-brand-img"/>
+                                    <div class="project-scroll-brand-content">
+                                        <h6>WORDS-HURT Copy Studio</h6>
+                                        <div class="dim">October 10, 2025 // Creative Direction</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 3: Alfi Studio -->
+                        <div class="projects-scroll-content-item" data-project-index="2">
+                            <div class="project-scroll-content-img-box">
+                                <img src="https://cdn.prod.website-files.com/6927231c0d7524b4d9b32284/697c9363030a7300dad2cac0_1.avif" alt="Alfi Studio" class="project-scroll-content-img"/>
+                            </div>
+                            <h3 class="line-animate">Alfi Creative Studio</h3>
+                            <div class="projects-scroll-content-lower">
+                                <p>Alannah's editorial design studio needed a digital home that matched the architectural luxury of her visual craft, converting 6-figure commercial brand inquiries on autopilot.</p>
+                                <div class="projects-scroll-brand">
+                                    <img src="https://cdn.prod.website-files.com/6927231c0d7524b4d9b32284/697c9363030a7300dad2cac0_1.avif" alt="Alfi Studio Logo" class="projects-scroll-brand-img"/>
+                                    <div class="project-scroll-brand-content">
+                                        <h6>Alfi Creative Studio</h6>
+                                        <div class="dim">August 20, 2025 // Editorial Agency</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Visual Column (Interactive Desktop Parallax) -->
+                <div class="projects-scroll-visual">
+                    <div class="projects-scroll-visual-list">
+                        <div class="projects-scroll-visual-item is-active" data-index="0" data-case="intellete" data-cursor="View Case Study">
+                            <div class="visual-wrap">
+                                <img src="https://cdn.prod.website-files.com/6927231c0d7524b4d9b32284/6940440e37f96153f51672e0_HeroSection.avif" alt="Intellete Showcase" class="projects-scroll-img"/>
+                                <div class="item-name">intellete</div>
+                            </div>
+                        </div>
+
+                        <div class="projects-scroll-visual-item" data-index="1" data-case="words-hurt" data-cursor="View Case Study">
+                            <div class="visual-wrap">
+                                <img src="https://cdn.prod.website-files.com/6927231c0d7524b4d9b32284/694b72bf1bf9d5bdf5fee301_mockup%20laptop.avif" alt="Words Hurt Showcase" class="projects-scroll-img"/>
+                                <div class="item-name">words-hurt</div>
+                            </div>
+                        </div>
+
+                        <div class="projects-scroll-visual-item" data-index="2" data-case="alfi" data-cursor="View Case Study">
+                            <div class="visual-wrap">
+                                <img src="https://cdn.prod.website-files.com/6927231c0d7524b4d9b32284/697c9363030a7300dad2cac0_1.avif" alt="Alfi Creative Showcase" class="projects-scroll-img"/>
+                                <div class="item-name">alfi-creative-studio</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a data-hover-anim="" href="#work-section" class="view-all-projects trigger-consultation" data-cursor="Work With Us">
+                        <div class="icon-embed-xxsmall-2">
+                            <svg viewBox="0 0 32 32" width="16" height="16" fill="currentColor">
+                                <path d="M10 6v2h12.59L6 24.59L7.41 26L24 9.41V22h2V6z"/>
+                            </svg>
+                        </div>
+                        <span data-hover-text="" class="link-btn-text primary-2">[ VIEW ALL PROJECTS ]</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== PROCESS & SERVICES SECTION ==================== -->
+        <section class="rl-padding-global rl-padding-section-large services-section" id="services-section">
+            <div class="rl-container-large">
+                <!-- Process Grid: Map, Make, Move -->
+                <div class="services-grid">
+                    <div class="service-wrapper">
+                        <div>
+                            <div class="section-tag">process</div>
+                            <h2 class="newsletter-heading">How it works</h2>
+                            <p style="color: var(--mid-grey); margin-top: 0.5rem;">Here's how we build digital flagships that convert:</p>
+                        </div>
+                        <a data-hover-anim="" href="#contact" class="more-about-btn trigger-consultation" style="display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none; font-family: var(--font-pixel-101); color: var(--primary-brand-color); text-transform: uppercase;">
+                            <span data-hover-text="">learn more</span>
+                            <svg viewBox="0 0 32 32" width="14" height="14" fill="currentColor">
+                                <path d="M10 6v2h12.59L6 24.59L7.41 26L24 9.41V22h2V6z"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Step 01: Map -->
+                    <div class="service-content mt">
+                        <div class="div-block-31">
+                            <h3 class="rl-heading-style-h2 pixel">map</h3>
+                            <span class="process-number">01</span>
+                        </div>
+                        <div style="font-family: var(--font-mono); font-size: 0.95rem; color: var(--black); margin-top: 0.25rem;">Strategy // Structure</div>
+                        <div class="div-block-24">
+                            <img src="https://cdn.prod.website-files.com/6918922cb5d769cc072f9e9e/6974cbc80c8fcd560c92026c_map.svg" alt="Map strategy" class="image-8"/>
+                        </div>
+                        <p class="process">
+                            We start by understanding your goals, your positioning, and what actually makes your brand valuable. This is where we figure out the story you're telling, who needs to hear it, and how to guide them from curious to ready to book.
+                        </p>
+                    </div>
+
+                    <!-- Step 02: Make -->
+                    <div class="service-content mt">
+                        <div class="div-block-31">
+                            <h3 class="rl-heading-style-h2 pixel">make</h3>
+                            <span class="process-number">02</span>
+                        </div>
+                        <div style="font-family: var(--font-mono); font-size: 0.95rem; color: var(--black); margin-top: 0.25rem;">Design // Experience</div>
+                        <div class="div-block-24">
+                            <img src="https://cdn.prod.website-files.com/6918922cb5d769cc072f9e9e/6974cbc8861fbf07e229e1cb_make.svg" alt="Make design" class="image-8"/>
+                        </div>
+                        <p class="process">
+                            Your brand gets translated into a visual journey that feels intentional. Every click, scroll, and CTA has a purpose. We're building the experience that takes your leads from "this looks interesting" to "I need to work with them."
+                        </p>
+                    </div>
+
+                    <!-- Step 03: Move -->
+                    <div class="service-content mt">
+                        <div class="div-block-31">
+                            <h3 class="rl-heading-style-h2 pixel">Move</h3>
+                            <span class="process-number">03</span>
+                        </div>
+                        <div style="font-family: var(--font-mono); font-size: 0.95rem; color: var(--black); margin-top: 0.25rem;">Develop // Automate</div>
+                        <div class="div-block-24">
+                            <img src="https://cdn.prod.website-files.com/6918922cb5d769cc072f9e9e/6974cbc8367ce36cd627e7cf_move.svg" alt="Move automate" class="image-8"/>
+                        </div>
+                        <p class="process">
+                            We build it fast, clean, and scalable. Then we plug in the tools, automate, and set up your systems. Your website becomes something that works for you, educating leads, filtering out, and delivering qualified clients ready to book.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Services Header -->
+                <div class="services-header">
+                    <div class="section-tag">Our Services</div>
+                    <h2 class="vision">THREE OPTIONS. ONE GOAL.</h2>
+                </div>
+
+                <!-- Service Card 01: One-Pager -->
+                <div class="service-card" data-service="one-pager">
+                    <div class="service-card-wrapper">
+                        <div class="rl-text-style-regular pixel">01</div>
+                        <h3 class="services">One-Pager Site</h3>
+                        <div class="service-divider"></div>
+                        <div class="div-block-42">
+                            <div class="service-time">
+                                <svg viewBox="0 0 256 256" width="100%" height="100%" fill="currentColor">
+                                    <path d="M128,40a96,96,0,1,0,96,96A96.11,96.11,0,0,0,128,40Zm0,176a80,80,0,1,1,80-80A80.09,80.09,0,0,1,128,216ZM173.66,90.34a8,8,0,0,1,0,11.32l-40,40a8,8,0,0,1-11.32-11.32l40-40A8,8,0,0,1,173.66,90.34ZM96,16a8,8,0,0,1,8-8h48a8,8,0,0,1,0,16H104A8,8,0,0,1,96,16Z"/>
+                                </svg>
+                            </div>
+                            <span>2 - 3 Weeks</span>
+                        </div>
+                    </div>
+                    <div class="service-card-content">
+                        <div class="div-block-45">
+                            A streamlined single-page site that tells your complete story, showcases your best work, and guides visitors straight to booking. Perfect for focused offers or launching fast.
+                        </div>
+                        <ul class="service-list">
+                            <li class="service-list-item"><span class="blue">Sales Page,</span></li>
+                            <li class="service-list-item"><span class="blue">Personal Brand,</span></li>
+                            <li class="service-list-item"><span class="blue">Product Launch,</span></li>
+                            <li class="service-list-item"><span class="blue">Event Landing Page</span></li>
+                        </ul>
+                        <img src="https://cdn.prod.website-files.com/6918922cb5d769cc072f9e9e/6989b42085127d3eab25d1a7_One-Pager%20Website.svg" alt="One-pager" class="image-12"/>
+                    </div>
+                </div>
+
+                <!-- Service Card 02: Full Website -->
+                <div class="service-card" data-service="full-website">
+                    <div class="service-card-wrapper">
+                        <div class="rl-text-style-regular pixel">02</div>
+                        <h3 class="services">Full Website</h3>
+                        <div class="service-divider"></div>
+                        <div class="div-block-42">
+                            <div class="service-time">
+                                <svg viewBox="0 0 256 256" width="100%" height="100%" fill="currentColor">
+                                    <path d="M128,40a96,96,0,1,0,96,96A96.11,96.11,0,0,0,128,40Zm0,176a80,80,0,1,1,80-80A80.09,80.09,0,0,1,128,216ZM173.66,90.34a8,8,0,0,1,0,11.32l-40,40a8,8,0,0,1-11.32-11.32l40-40A8,8,0,0,1,173.66,90.34ZM96,16a8,8,0,0,1,8-8h48a8,8,0,0,1,0,16H104A8,8,0,0,1,96,16Z"/>
+                                </svg>
+                            </div>
+                            <span>3 - 6 Weeks</span>
+                        </div>
+                    </div>
+                    <div class="service-card-content">
+                        <div class="div-block-45">
+                            Multi-page custom build with strategic structure. Your complete brand experience - portfolio, process, services, and story - all connected to convert traffic into qualified leads.
+                        </div>
+                        <ul class="service-list">
+                            <li class="service-list-item"><span class="blue">Consultancy,</span></li>
+                            <li class="service-list-item"><span class="blue">Established Agency,</span></li>
+                            <li class="service-list-item"><span class="blue">Service-Based Business,</span></li>
+                            <li class="service-list-item"><span class="blue">Multi-Disciplinary Creative</span></li>
+                        </ul>
+                        <img src="https://cdn.prod.website-files.com/6918922cb5d769cc072f9e9e/6989b42c18da3e945b5ae4bf_Full%20Website.svg" alt="Full website" class="image-12"/>
+                    </div>
+                </div>
+
+                <!-- Service Card 03: Website Growth -->
+                <div class="service-card" data-service="growth-system">
+                    <div class="service-card-wrapper">
+                        <div class="rl-text-style-regular pixel">03</div>
+                        <h3 class="services">Website Growth</h3>
+                        <div class="service-divider"></div>
+                        <div class="div-block-42">
+                            <div class="service-time">
+                                <svg viewBox="0 0 256 256" width="100%" height="100%" fill="currentColor">
+                                    <path d="M128,40a96,96,0,1,0,96,96A96.11,96.11,0,0,0,128,40Zm0,176a80,80,0,1,1,80-80A80.09,80.09,0,0,1,128,216ZM173.66,90.34a8,8,0,0,1,0,11.32l-40,40a8,8,0,0,1-11.32-11.32l40-40A8,8,0,0,1,173.66,90.34ZM96,16a8,8,0,0,1,8-8h48a8,8,0,0,1,0,16H104A8,8,0,0,1,96,16Z"/>
+                                </svg>
+                            </div>
+                            <span>4 - 6 Weeks</span>
+                        </div>
+                    </div>
+                    <div class="service-card-content">
+                        <div class="div-block-45">
+                            Everything in Full Website, plus the tools and automations that keep it working for you. CRM integration, email sequences, client onboarding flows, and ongoing support as you scale.
+                        </div>
+                        <ul class="service-list">
+                            <li class="service-list-item"><span class="blue">Scaling Agencies,</span></li>
+                            <li class="service-list-item"><span class="blue">Automated Systems,</span></li>
+                            <li class="service-list-item"><span class="blue">High-Volume Studios,</span></li>
+                            <li class="service-list-item"><span class="blue">Productized Services</span></li>
+                        </ul>
+                        <img src="https://cdn.prod.website-files.com/6918922cb5d769cc072f9e9e/6989b4375c02d9c20017e998_Website%20%2B%20Growth%20System.svg" alt="Growth system" class="image-12"/>
+                    </div>
+                </div>
+
+                <div class="div-block-57">
+                    <a href="#contact" class="hero-btn middle trigger-consultation" data-hover-anim="" data-cursor="Book Call">
+                        <div class="text-block">
+                            <div data-hover-text="" class="btn-text">LET 'S BUILD YOURS</div>
+                        </div>
+                        <div class="icon-block">
+                            <div class="arrow-up-right-icon">
+                                <svg viewBox="0 0 256 256" width="100%" height="100%" fill="currentColor">
+                                    <path d="M200 64v104a8 8 0 0 1-16 0V83.31L69.66 197.66a8 8 0 0 1-11.32-11.32L172.69 72H88a8 8 0 0 1 0-16h104a8 8 0 0 1 8 8"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== TESTIMONIAL / FEEDBACK SECTION ==================== -->
+        <section class="rl-padding-global testimonial-section rl-padding-section-large" id="feedback-section">
+            <div class="rl-container-large">
+                <div class="section-tag">Feedback</div>
+
+                <div class="rl_testimonial15_component" id="testimonial-slider">
+                    <div class="rl_testimonial15_mask">
+                        <!-- Slide 1: Ahsan / Intellete -->
+                        <div class="rl_testimonial15_slide is-active" data-slide-index="0">
+                            <div class="rl_testimonial15_content">
+                                <a href="#work-section" class="rl_testimonial15_client-image-wrapper" data-cursor="View Case Study">
+                                    <img src="https://cdn.prod.website-files.com/6918922cb5d769cc072f9e9e/694b77eea8333c7e1ac2c63a_Screenshot%202025-12-14%20at%2011.53.02%E2%80%AFAM.avif" alt="Intellete Case Study" class="rl_testimonial15_client-image"/>
+                                    <div class="testimonial-img-arrow">
+                                        <svg viewBox="0 0 256 256" width="16" height="16" fill="currentColor">
+                                            <path d="M200 64v104a8 8 0 0 1-16 0V83.31L69.66 197.66a8 8 0 0 1-11.32-11.32L172.69 72H88a8 8 0 0 1 0-16h104a8 8 0 0 1 8 8"/>
+                                        </svg>
+                                    </div>
+                                    <div class="testimonial-img-content">
+                                        <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--dim-text); text-transform: uppercase;">Case Study</span>
+                                        <h5 style="font-family: var(--font-primary); font-size: 1rem; font-weight: 700; color: var(--black);">Intellete</h5>
+                                    </div>
+                                </a>
+
+                                <div class="rl_testimonial15_content-right">
+                                    <div class="testimonial-text">
+                                        "We originally built our website on Squarespace in a day — just something to get us started, but it didn't quite tell our story or showcase our offerings the way we wanted. That's when we brought in the team to redesign it, and the experience was fantastic. They were incredibly patient, intuitive, and always willing to go the extra mile. Even though we weren't always sure how to explain what we had in mind, they were able to take our ideas and turn them into a design that felt exactly right.<br/><br/>
+                                        <em>Since the relaunch, we've received so many compliments on how clean, professional, and engaging the site looks. Highly recommend working with them.</em>"
+                                    </div>
+                                    <div class="rl_testimonial15_client">
+                                        <img src="https://cdn.prod.website-files.com/6918922cb5d769cc072f9e9e/69565b66500939b4cf18bf9d_Pixelated%20-%20ahsan%20circle.avif" alt="Ahsan Arshad" class="testimonial-avatar"/>
+                                        <div class="rl_testimonial15_client-info">
+                                            <div class="semi-bold">Ahsan Arshad</div>
+                                            <div class="dim">Co-founder, Intellete</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2: Alannah / Alfi Studio -->
+                        <div class="rl_testimonial15_slide" data-slide-index="1">
+                            <div class="rl_testimonial15_content">
+                                <a href="#work-section" class="rl_testimonial15_client-image-wrapper" data-cursor="View Case Study">
+                                    <img src="https://cdn.prod.website-files.com/6918922cb5d769cc072f9e9e/69820a38290a43136a6af1ce_iPad%20Mockup%201.avif" alt="Alfi Studio Case Study" class="rl_testimonial15_client-image"/>
+                                    <div class="testimonial-img-arrow">
+                                        <svg viewBox="0 0 256 256" width="16" height="16" fill="currentColor">
+                                            <path d="M200 64v104a8 8 0 0 1-16 0V83.31L69.66 197.66a8 8 0 0 1-11.32-11.32L172.69 72H88a8 8 0 0 1 0-16h104a8 8 0 0 1 8 8"/>
+                                        </svg>
+                                    </div>
+                                    <div class="testimonial-img-content">
+                                        <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--dim-text); text-transform: uppercase;">Case Study</span>
+                                        <h5 style="font-family: var(--font-primary); font-size: 1rem; font-weight: 700; color: var(--black);">Alfi Creative Studio</h5>
+                                    </div>
+                                </a>
+
+                                <div class="rl_testimonial15_content-right">
+                                    <div class="testimonial-text">
+                                        "I loved their whole process from the very start to the end, and how timely everything was — the creativity in keeping my brand intact throughout the site was perfect!!<br/><br/>
+                                        <em>I love how the final website turned out. They understood the brand from the start and it really was a dream to work with them. I would 100% work with them again.</em>"
+                                    </div>
+                                    <div class="rl_testimonial15_client">
+                                        <img src="https://cdn.prod.website-files.com/6918922cb5d769cc072f9e9e/6982067428f4df88f784cbf5_Pixelated%20-%20alannah.avif" alt="Alannah Finnigan" class="testimonial-avatar"/>
+                                        <div class="rl_testimonial15_client-info">
+                                            <div class="semi-bold">Alannah Finnigan</div>
+                                            <div class="dim">Founder, Alfi Creative Studio</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3: Kalyl / Words-Hurt -->
+                        <div class="rl_testimonial15_slide" data-slide-index="2">
+                            <div class="rl_testimonial15_content">
+                                <a href="#work-section" class="rl_testimonial15_client-image-wrapper" data-cursor="View Case Study">
+                                    <img src="https://cdn.prod.website-files.com/6918922cb5d769cc072f9e9e/6982034e72fd6b5fa6be7a19_Image%203%20from%20Google%20Drive.avif" alt="Words Hurt Case Study" class="rl_testimonial15_client-image"/>
+                                    <div class="testimonial-img-arrow">
+                                        <svg viewBox="0 0 256 256" width="16" height="16" fill="currentColor">
+                                            <path d="M200 64v104a8 8 0 0 1-16 0V83.31L69.66 197.66a8 8 0 0 1-11.32-11.32L172.69 72H88a8 8 0 0 1 0-16h104a8 8 0 0 1 8 8"/>
+                                        </svg>
+                                    </div>
+                                    <div class="testimonial-img-content">
+                                        <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--dim-text); text-transform: uppercase;">Case Study</span>
+                                        <h5 style="font-family: var(--font-primary); font-size: 1rem; font-weight: 700; color: var(--black);">Words-Hurt</h5>
+                                    </div>
+                                </a>
+
+                                <div class="rl_testimonial15_content-right">
+                                    <div class="testimonial-text">
+                                        "I'm very protective over my material and due to the nature of my brand, a lot of people don't 'get it', and I needed a team that got exactly what I was trying to say & create.<br/><br/>
+                                        <em>They asked the right questions straight off the bat and it was clear they were excited about it. They translated my crazy ideas into real tangible website things that WORK! Don't think twice before booking!</em>"
+                                    </div>
+                                    <div class="rl_testimonial15_client">
+                                        <img src="https://cdn.prod.website-files.com/6918922cb5d769cc072f9e9e/698205f1190b917fc154fe26_Pixelated%20-%20kalyl.avif" alt="Kalyl Kadri" class="testimonial-avatar"/>
+                                        <div class="rl_testimonial15_client-info">
+                                            <div class="semi-bold">Kalyl Kadri</div>
+                                            <div class="dim">Founder, Words-Hurt</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide Navigation Controls -->
+                    <div class="testimonial-nav-box">
+                        <button type="button" class="test-nav-btn" id="prev-test" aria-label="Previous Testimonial">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.81066 12.7499L12.5303 19.4696L11.4697 20.5303L2.93934 11.9999L11.4697 3.46961L12.5303 4.53027L5.81066 11.2499L20 11.2499L20 12.7499L5.81066 12.7499Z"/>
+                            </svg>
+                        </button>
+                        <button type="button" class="test-nav-btn" id="next-test" aria-label="Next Testimonial">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.1893 11.2501L11.4697 4.53039L12.5303 3.46973L21.0607 12.0001L12.5303 20.5304L11.4697 19.4697L18.1893 12.7501H4V11.2501H18.1893Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== FREE CLARITY GUIDE (TICKET) ==================== -->
+        <header class="rl-padding-section-large rl-padding-global clarity" id="clarity-section">
+            <div class="rl_header26_component">
+                <div class="rl_header26_content">
+                    <div class="section-tag">Free Clarity Guide</div>
+                    <h2 class="rl-heading-style-h2 clarity">
+                        Know exactly where to invest before you <span class="text-span-22">$$$</span> anywhere.
+                    </h2>
+                    <p>
+                        You are building something real but the story your audience is experiencing has not caught up to the thing you are actually building.<br/><br/>
+                        Three honest questions across clarity of <em>thought</em>, clarity of <em>expression</em>, and clarity of <em>identity</em>. A result that tells you specifically where your gap is and what to do about it.<br/><br/>
+                        This is the exact <em>clarity framework</em> we use with founders before we build anything. Now you can do it yourself with our interactive diagnostic.<br/><br/>
+                        Click below for your <strong>one ticket to clarity</strong>.
+                    </p>
+                </div>
+
+                <div class="clarity-cta-box">
+                    <button type="button" class="hero-btn middle open-clarity-quiz" data-hover-anim="" data-cursor="Diagnose Now">
+                        <div class="text-block">
+                            <div data-hover-text="" class="btn-text">GET BIZZ CLARITY</div>
+                        </div>
+                        <div class="icon-block">
+                            <div class="arrow-up-right-icon">
+                                <svg viewBox="0 0 256 256" width="100%" height="100%" fill="currentColor">
+                                    <path d="M200 64v104a8 8 0 0 1-16 0V83.31L69.66 197.66a8 8 0 0 1-11.32-11.32L172.69 72H88a8 8 0 0 1 0-16h104a8 8 0 0 1 8 8"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+
+                <!-- Interactive 3D Perspective Ticket with Front & Back artwork -->
+                <div class="ticket-box open-clarity-quiz" data-cursor="CLICK FOR CLARITY" id="interactive-ticket">
+                    <div class="ticket-wrapper">
+                        <img src="https://cdn.prod.website-files.com/6918922cb5d769cc072f9e9e/69f6dd7e8e5ebbe23b1b4429_Frame%20427321336.png" alt="Ticket Back" class="ticket-back"/>
+                        <img src="https://cdn.prod.website-files.com/6918922cb5d769cc072f9e9e/69f6dd7e544f1e0493a322a9_Frame%20427321338.png" alt="Ticket Front" class="ticket-front"/>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- ==================== NEWSLETTER SECTION ("THE 404 ARCHIVES") ==================== -->
+        <section class="rl-padding-global rl-padding-section-large newsletter-section" id="newsletter-section">
+            <div class="rl-container-large">
+                <div class="rl_layout207_component">
+                    <div class="newsletter-img-box">
+                        <img src="https://cdn.prod.website-files.com/6918922cb5d769cc072f9e9e/693b8b41fb8e6249037761b7_magazine.avif" alt="VØID FORM Magazine" class="full-image"/>
+                    </div>
+
+                    <div class="rl_layout207_content">
+                        <div class="section-tag">Newsletter</div>
+                        <h2 class="rl-heading-style-h2 newsletter">
+                            The <strong class="bold-text-2">404</strong> Archives
+                        </h2>
+                        <p class="newsletter-body">
+                            This is for founders building their whole online presence, not just a website. Every edition gives you a collection of inspiration, first look at what's launching (and sometimes a surprise), and our fav client stories straight from the studio.
+                        </p>
+
+                        <div class="rl_layout207_item-list">
+                            <div class="rl_layout207_item">
+                                <img src="https://cdn.prod.website-files.com/6918922cb5d769cc072f9e9e/691df85517d72cda865610cb_Best.svg" alt="Best icon" class="rl_layout207_icon"/>
+                                <div class="rl_layout207_item-text-wrapper">
+                                    <p><strong>Website Archive</strong> — one site we can't stop thinking about currently</p>
+                                </div>
+                            </div>
+                            <div class="rl_layout207_item">
+                                <img src="https://cdn.prod.website-files.com/6918922cb5d769cc072f9e9e/691df857a72e6094a6154525_Victory.svg" alt="Victory icon" class="rl_layout207_icon"/>
+                                <div class="rl_layout207_item-text-wrapper">
+                                    <p><strong>Mission Control</strong> — the command center for what we're building, <em>for you</em></p>
+                                </div>
+                            </div>
+                            <div class="rl_layout207_item">
+                                <img src="https://cdn.prod.website-files.com/6918922cb5d769cc072f9e9e/691df8578a14b462095bfc47_Yo.svg" alt="Yo icon" class="rl_layout207_icon"/>
+                                <div class="rl_layout207_item-text-wrapper">
+                                    <p><strong>Studio Sneak Peek</strong> — client projects, their unique stories, and the final launch</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="div-block-14">
+                            <h4 class="newsletter-box">JOIN THE ARCHIVE</h4>
+                            <form class="newsletter-form main-newsletter-form">
+                                <input class="newsletter-input" type="text" placeholder="Your Name" required/>
+                                <input class="newsletter-input" type="email" placeholder="name@example.com" required/>
+                                <button type="submit" class="newsletter-btn">SUBSCRIBE</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- #################### 5. CURTAIN REVEAL FOOTER #################### -->
+    <section class="rl-padding-global footer_component">
+        <div class="rl-container-large footer">
+            <div class="footer_upper">
+                <div>
+                    <div style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--dim-text); text-transform: uppercase; margin-bottom: 0.5rem;">Quick Links</div>
+                    <div class="footer_links">
+                        <a data-hover-anim="" href="#hero-section"><span data-hover-text="">Home,</span></a>
+                        <a data-hover-anim="" href="#about-section"><span data-hover-text="">About,</span></a>
+                        <a data-hover-anim="" href="#work-section"><span data-hover-text="">Work,</span></a>
+                        <a data-hover-anim="" href="#contact" class="trigger-consultation"><span data-hover-text="">Contact</span></a>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="footer_links">
+                        <a data-hover-anim="" href="https://www.instagram.com" target="_blank"><span data-hover-text="">INSTAGRAM,</span></a>
+                        <a data-hover-anim="" href="https://www.linkedin.com" target="_blank"><span data-hover-text="">LINKEDIN</span></a>
+                    </div>
+                    <a data-hover-anim="" href="mailto:studio@voidform.design" style="margin-top: 0.5rem; display: inline-block; text-decoration: none; color: var(--secondary-brand-color); font-family: var(--font-mono); font-size: 0.95rem;">
+                        <span data-hover-text="">[ studio@voidform.design ]</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer_lower">
+                <div class="footer-wordmark">VØID FORM</div>
+                <div class="div-block-56">© 2026 VØID FORM STUDIO. All Rights Reserved.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- #################### 6. INTERACTIVE CLARITY DIAGNOSTIC MODAL #################### -->
+    <div class="vf-modal-backdrop" id="clarity-modal">
+        <div class="vf-modal" role="dialog" aria-modal="true">
+            <button type="button" class="vf-modal-close" id="clarity-modal-close" aria-label="Close modal">✕</button>
+            <div class="section-tag">Interactive Protocol</div>
+            <h3 class="vf-modal-title">Founder Clarity Diagnostic</h3>
+            <p class="vf-modal-subtitle">Answer 3 questions to pinpoint your website's highest-leverage conversion gap.</p>
+
+            <!-- Step 1: Thought -->
+            <div class="clarity-step is-active" data-step="1">
+                <div class="clarity-question">1. Clarity of Thought: When someone lands on your site, how fast do they grasp why you are the definitive premium choice?</div>
+                <div class="clarity-options">
+                    <button type="button" class="clarity-option-btn" data-score="10">A. Instantly. Our positioning is razor-sharp and uncontested.</button>
+                    <button type="button" class="clarity-option-btn" data-score="5">B. Somewhat. They understand our service, but not why we're 3x more expensive.</button>
+                    <button type="button" class="clarity-option-btn" data-score="2">C. Rarely. We constantly have to over-explain our value on calls.</button>
+                </div>
+            </div>
+
+            <!-- Step 2: Expression -->
+            <div class="clarity-step" data-step="2">
+                <div class="clarity-question">2. Clarity of Expression: Does your current digital interface mirror the quality and sophistication of your actual deliverable?</div>
+                <div class="clarity-options">
+                    <button type="button" class="clarity-option-btn" data-score="10">A. Yes, it's an elevated editorial experience that blows people away.</button>
+                    <button type="button" class="clarity-option-btn" data-score="5">B. It's okay, but feels like an off-the-shelf template from 2021.</button>
+                    <button type="button" class="clarity-option-btn" data-score="2">C. Honestly, I'm embarrassed to send high-value prospects to it.</button>
+                </div>
+            </div>
+
+            <!-- Step 3: Identity -->
+            <div class="clarity-step" data-step="3">
+                <div class="clarity-question">3. Clarity of Identity: What percentage of qualified visitors take decisive action (booking calls / inquiries)?</div>
+                <div class="clarity-options">
+                    <button type="button" class="clarity-option-btn" data-score="10">A. Over 15% — we qualify and close high-ticket clients effortlessly.</button>
+                    <button type="button" class="clarity-option-btn" data-score="5">B. 5-10% — good traffic, but conversion drop-off is noticeable.</button>
+                    <button type="button" class="clarity-option-btn" data-score="2">C. Under 2% — we have lots of eyeballs, but crickets in the calendar.</button>
+                </div>
+            </div>
+
+            <!-- Result Step -->
+            <div class="clarity-step" data-step="result">
+                <div class="clarity-result-badge" id="clarity-score-badge">SCORE: 82% // GROWTH READY</div>
+                <p id="clarity-result-text" style="font-size: 1.15rem; line-height: 1.5; color: var(--black); margin-bottom: 1.5rem;">
+                    Your core offer is strong, but your digital packaging has a severe conversion leak. A custom digital flagship will immediately reposition your brand authority and 3x your booked discovery calls.
+                </p>
+                <button type="button" class="submit-btn trigger-consultation" style="width: 100%;">REQUEST CUSTOM ROADMAP</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- #################### 7. CASE STUDY DEEP DIVE DRAWER #################### -->
+    <div class="vf-drawer" id="case-drawer">
+        <button type="button" class="vf-modal-close" id="drawer-close" aria-label="Close drawer">✕</button>
+        <div class="section-tag" id="drawer-tag">CASE STUDY</div>
+        <h3 class="vf-modal-title" id="drawer-title">Intellete</h3>
+        <p class="vf-modal-subtitle" id="drawer-subtitle">European Student Placement Architecture</p>
+
+        <div class="vf-drawer-stats">
+            <div class="vf-stat-item">
+                <div class="stat-num" id="stat-1">+240%</div>
+                <div class="stat-lbl" id="stat-1-lbl">Qualified Inquiries</div>
+            </div>
+            <div class="vf-stat-item">
+                <div class="stat-num" id="stat-2">3.2 Weeks</div>
+                <div class="stat-lbl" id="stat-2-lbl">Concept to Launch</div>
+            </div>
+        </div>
+
+        <div id="drawer-body" style="font-size: 1.1rem; line-height: 1.6; color: var(--mid-grey); margin-bottom: 2rem;">
+            Intellete originally suffered from template fatigue on Squarespace. We engineered a complete digital flagship with interactive program discovery, editorial typography, and high-performance Webflow architecture.
+        </div>
+
+        <button type="button" class="submit-btn trigger-consultation" style="width: 100%;">BUILD SOMETHING SIMILAR</button>
+    </div>
+
+    <!-- #################### 8. PROJECT CONSULTATION INQUIRY MODAL #################### -->
+    <div class="vf-modal-backdrop" id="consultation-modal">
+        <div class="vf-modal" role="dialog" aria-modal="true">
+            <button type="button" class="vf-modal-close" id="consult-modal-close" aria-label="Close modal">✕</button>
+            <div class="section-tag">Direct Studio Inquiry</div>
+            <h3 class="vf-modal-title">Let's Build Your Flagship</h3>
+            <p class="vf-modal-subtitle">Tell us about your project timeline and objectives. We respond within 24 hours.</p>
+
+            <form class="inquiry-form" id="consultation-form">
+                <div class="form-group">
+                    <label for="c-name">Your Name</label>
+                    <input type="text" id="c-name" placeholder="Kanza or Founder name" required/>
+                </div>
+                <div class="form-group">
+                    <label for="c-email">Work Email</label>
+                    <input type="email" id="c-email" placeholder="founder@company.com" required/>
+                </div>
+                <div class="form-group">
+                    <label for="c-tier">Target Offering</label>
+                    <select id="c-tier">
+                        <option value="one-pager">One-Pager Site (2-3 Weeks)</option>
+                        <option value="full-website" selected>Full Website Flagship (3-6 Weeks)</option>
+                        <option value="growth">Website Growth & Automations (4-6 Weeks)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="c-budget">Estimated Budget</label>
+                    <select id="c-budget">
+                        <option value="5-10k">$5,000 - $10,000</option>
+                        <option value="10-25k" selected>$10,000 - $25,000</option>
+                        <option value="25k+">$25,000+</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="c-msg">Tell us about your brand</label>
+                    <textarea id="c-msg" rows="3" placeholder="What are you building and where is the current friction?" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">SUBMIT DISCOVERY INQUIRY</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
